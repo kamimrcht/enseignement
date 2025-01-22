@@ -34,6 +34,7 @@ partie écrite du TP :
 partie orale du TP :
 - je vous interroge sur certaines de vos réponses aux questions
 
+# Questions
 
 0. Regardez le fichier linkedList.py, il est composé de code à trou qu'il faudra remplir pour répondre à ce TP.
 
