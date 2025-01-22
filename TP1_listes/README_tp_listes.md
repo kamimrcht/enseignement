@@ -43,9 +43,9 @@ Chaque noeud contient des données (`self.data`) et une référence au noeud sui
 Voyez ensuite la classe LinkedList: elle représente une liste chaînée.
 Regardez dans les commentaires, certaines lignes commencent par `>>>` suivis de code Python directement intégrés dans les commentaires. 
 Ce sont des doctests! Python sait les interpréter et va les exécuter. Il attend:
->>> resulat = ligne de code
-resultat_attendu
-et va vérifier que resultat == resultat_attendu
+`>>> resulat = ligne de code`
+`resultat_attendu`
+et va vérifier que `resultat == resultat_attendu`
 Si les doctests fonctionnenent, vous n'aurez aucun message particulier dans la console en lançant `python linkedList.py`, dans le cas contraire, vous verrez s'afficher des messages d'erreur.
 
 J'ai mis beaucoup de tests pour la classe, et beaucoup ne s'effectueront pas correctement avant que vous ayez avancé dans le tp. C'est normal !
