@@ -102,10 +102,12 @@ Avec `import time` et `time.perf_counter()`, mesurez et écrivez le temps néces
 
 Note : en exécutant votre code, je dois pouvoir produire ce graphique en .png ou .pdf
 
-16. Vis à vis de ce que nous avons vu en cours, quels sont vos commentaires sur cette figure ? 
+16. Vis à vis de ce que nous avons vu en cours, quels sont vos commentaires sur cette figure ?
 
-17. Bonus : si nous testions un `array` à la place d'une `List` ? Comment s'y prendre ? Est-ce que ça améliore la recherche, et pourquoi ? 
+17. Pourquoi ai-je designé une expérience avec un k-mer `lookup` arbitraire à chercher dans une séquence générée aléatoirement ? 
 
-18. Bonus 2 : dé-commentez le code #bonus2. C'est aussi une recherche du k-mer. Bonus pour le/la première étudiant.e qui a fini son TP et vient m'expliquer ce qu'il se passe sur le temps d'exécution.
+18. Bonus : si nous testions un `array` à la place d'une `List` ? Comment s'y prendre ? Est-ce que ça améliore la recherche, et pourquoi ? 
+
+19. Bonus 2 : dé-commentez le code #bonus2. C'est aussi une recherche du k-mer. Bonus pour le/la première étudiant.e qui a fini son TP et vient m'expliquer ce qu'il se passe sur le temps d'exécution.
 
 
