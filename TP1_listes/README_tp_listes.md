@@ -30,6 +30,7 @@ partie écrite du TP :
 - quand j'exécute votre code, un graphique en .png ou .pdf est généré
 - ce graphique est correct
 - vos réponses aux questions sont correctes
+- on décide d'une date de rendu ensemble : je ne prends pas en compte les commits postérieurs à la date de rendu
 
 partie orale du TP :
 - je vous interroge sur certaines de vos réponses aux questions
