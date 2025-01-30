@@ -97,7 +97,7 @@ Avec `import time` et `time.perf_counter()`, mesurez et écrivez le temps néces
 
 13. Finalement, à quoi nous a servi de surcharger `__len__(self)` ? 
 
-14. Que remarquez vous avec cette dernière fonction ? Faites un petit travail de recherche pour m'expliquer simplement pourquoi.
+14. Revenons à `boucle_naive`, que remarquez vous avec cette dernière fonction ? Faites un petit travail de recherche pour m'expliquer simplement pourquoi.
 
 15. Faites varier la taille de séquences pour avoir au moins 4 ou 5 listes de k-mers de tailles différentes. Collectez les temps pour les trois fonctions qui recherchent des k-mers dans les listes (`contient`, `contient_linked` et `boucle_naive`), et pour les deux types de listes. Ecrivez une fonction qui prend en entrée ces temps, et affiche, pour chaque combinaison possible liste x fonction, les temps d'exécution pour des nombre de k-mers croissants.
 
