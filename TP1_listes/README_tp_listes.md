@@ -30,10 +30,12 @@ partie écrite du TP :
 - quand j'exécute votre code, un graphique en .png ou .pdf est généré
 - ce graphique est correct
 - vos réponses aux questions sont correctes
+- on décide d'une date de rendu ensemble : je ne prends pas en compte les commits postérieurs à la date de rendu
 
 partie orale du TP :
 - je vous interroge sur certaines de vos réponses aux questions
 
+# Questions
 
 0. Regardez le fichier linkedList.py, il est composé de code à trou qu'il faudra remplir pour répondre à ce TP.
 
@@ -43,9 +45,9 @@ Chaque noeud contient des données (`self.data`) et une référence au noeud sui
 Voyez ensuite la classe LinkedList: elle représente une liste chaînée.
 Regardez dans les commentaires, certaines lignes commencent par `>>>` suivis de code Python directement intégrés dans les commentaires. 
 Ce sont des doctests! Python sait les interpréter et va les exécuter. Il attend:
->>> resulat = ligne de code
-resultat_attendu
-et va vérifier que resultat == resultat_attendu
+`>>> resulat = ligne de code`
+`resultat_attendu`
+et va vérifier que `resultat == resultat_attendu`
 Si les doctests fonctionnenent, vous n'aurez aucun message particulier dans la console en lançant `python linkedList.py`, dans le cas contraire, vous verrez s'afficher des messages d'erreur.
 
 J'ai mis beaucoup de tests pour la classe, et beaucoup ne s'effectueront pas correctement avant que vous ayez avancé dans le tp. C'est normal !
@@ -95,16 +97,18 @@ Avec `import time` et `time.perf_counter()`, mesurez et écrivez le temps néces
 
 13. Finalement, à quoi nous a servi de surcharger `__len__(self)` ? 
 
-14. Que remarquez vous avec cette dernière fonction ? Faites un petit travail de recherche pour m'expliquer simplement pourquoi.
+14. Revenons à `boucle_naive`, que remarquez vous avec cette dernière fonction ? Faites un petit travail de recherche pour m'expliquer simplement pourquoi.
 
 15. Faites varier la taille de séquences pour avoir au moins 4 ou 5 listes de k-mers de tailles différentes. Collectez les temps pour les trois fonctions qui recherchent des k-mers dans les listes (`contient`, `contient_linked` et `boucle_naive`), et pour les deux types de listes. Ecrivez une fonction qui prend en entrée ces temps, et affiche, pour chaque combinaison possible liste x fonction, les temps d'exécution pour des nombre de k-mers croissants.
 
 Note : en exécutant votre code, je dois pouvoir produire ce graphique en .png ou .pdf
 
-16. Vis à vis de ce que nous avons vu en cours, quels sont vos commentaires sur cette figure ? 
+16. Vis à vis de ce que nous avons vu en cours, quels sont vos commentaires sur cette figure ?
 
-17. Bonus : si nous testions un `array` à la place d'une `List` ? Comment s'y prendre ? Est-ce que ça améliore la recherche, et pourquoi ? 
+17. Pourquoi ai-je designé une expérience avec un k-mer `lookup` arbitraire à chercher dans une séquence générée aléatoirement ? 
 
-18. Bonus 2 : dé-commentez le code #bonus2. C'est aussi une recherche du k-mer. Bonus pour le/la première étudiant.e qui a fini son TP et vient m'expliquer ce qu'il se passe sur le temps d'exécution.
+18. Bonus : si nous testions un `array` à la place d'une `List` ? Comment s'y prendre ? Est-ce que ça améliore la recherche, et pourquoi ? 
+
+19. Bonus 2 : dé-commentez le code #bonus2. C'est aussi une recherche du k-mer. Bonus pour le/la première étudiant.e qui a fini son TP et vient m'expliquer ce qu'il se passe sur le temps d'exécution.
 
 
