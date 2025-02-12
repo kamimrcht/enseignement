@@ -145,7 +145,6 @@ def compare_taille(n_max, fichier_sortie):
 	n_values = []
 	table_size = []
 	dict_size = []
-	encoding_size = []
 	k = 21
 	
 	for n in range(100, n_max, 1000):
@@ -155,15 +154,13 @@ def compare_taille(n_max, fichier_sortie):
 		n_values.append(n)
 		table_size.append(sys.getsizeof(tableau)+sys.getsizeof(mphf)) # pourquoi ici on ne mesure pas juste la taille en mémoire du tableau ? 
 		dict_size.append(sys.getsizeof(set_kmer))
-		encoding_size.append(n * 2 * k / 8)  # expliquer ce que c'est
 
 	plt.plot(n_values, table_size, label='Table avec MPHF')
 	plt.plot(n_values, dict_size, label='Dict')
-	plt.plot(n_values, encoding_size, label='Adressage direct des clés')
 	plt.xlabel('n')
 	plt.xticks(n_values, [str(x) for x in n_values], rotation=45)
 	plt.ylabel('Taille (octets)')
-	plt.title('Évolution de la taille de la table de hachage avec MPHF, du dict et de l\'adressage direct des clés')
+	plt.title('Évolution de la taille de la table de hachage avec MPHF et du dict')
 	plt.legend()
 	plt.savefig(fichier_sortie)
 	plt.close()
