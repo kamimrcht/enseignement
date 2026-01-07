@@ -1,31 +1,23 @@
 """
-Ce code implémente une liste chaînée (LinkedList) simple avec les opérations basiques : 
+Ce code implémente une liste chaînée simple avec les opérations : 
 - ajouter un élément à la fin de la liste (append)
 - récupérer un élément par son index (get)
 - supprimer un élément par son index (delete)
 
 chaque méthode est testée à l'aide de doctests 
 """
+from array import array
+from typing import Iterable
 from random import choice
 import string
 import time
-from typing import Iterable
-from array import array
 
-class Node:
-	"""
-	Classe pour représenter un noeud dans une liste chaînée.
-	Chaque noeud contient des données et une référence au noeud suivant.
-	"""
-	def __init__(self, data):
-		self.data = data
-		self.next = None
 
-class LinkedList:
+class TPList:
 	"""
 	Classe pour représenter une liste chaînée.
 
-	>>> ll = LinkedList()
+	>>> ll = TPList()
 	>>> ll.append(10)
 	>>> ll.append(20)
 	>>> ll.append(30)
@@ -64,7 +56,7 @@ class LinkedList:
 		
 		:param data: La valeur à ajouter à la liste.
 		
-		>>> ll = LinkedList()
+		>>> ll = TPList()
 		>>> ll.append(10)
 		>>> ll.get(0)
 		10
@@ -95,7 +87,7 @@ class LinkedList:
 		"""
 		Permet d'itérer sur la liste chaînée.
 		
-		>>> ll = LinkedList()
+		>>> ll = TPList()
 		>>> ll.append(10)
 		>>> ll.append(20)
 		>>> ll.append(30)
@@ -112,6 +104,17 @@ class LinkedList:
 		Retourne la longueur de la liste chaînée.
 		"""
 		pass
+
+class Node:
+	"""
+	Classe pour représenter un noeud dans une liste chaînée.
+	Chaque noeud contient des données et une référence au noeud suivant.
+	"""
+	def __init__(self, data):
+		self.data = data
+		self.next = None
+
+
 
 if __name__ == "__main__":
 	import doctest
@@ -136,9 +139,9 @@ if __name__ == "__main__":
 	
 
 
-	def contient_linked(L:LinkedList,e:string):
+	def contient_TP(L:TPList,e:string):
 		"""
-		:param L: une linked list
+		:param L: une TP list
 		:param e: un élément à chercher dans la liste
 		"""
 		pass
@@ -159,7 +162,7 @@ if __name__ == "__main__":
 	
 	
 	
-	# bonus2
+	# bonus
 	#try:
 	#	sequence.index(lookup)
 	#except:
