@@ -42,7 +42,7 @@ A télécharger comme suit :
 
 Vous trouverez aussi le résultat prévu : un fichier contenant la liste de k-mers qui est effectivement dans l'intersection (k = 25), pour vérifier vos résultats, ici : 
 
-`https://filesender.renater.fr/?s=download&token=7a3c063f-1b59-4223-9c84-b62b032d9ce3`
+[https://filesender.renater.fr/?s=download&token=7a3c063f-1b59-4223-9c84-b62b032d9ce3](https://filesender.renater.fr/?s=download&token=735382eb-7cae-4b74-b626-0f15f1db7237)
 
 **Conseil:** pour tester et prototyper, utiliser une fraction des jeux de données avec un `head`
 
